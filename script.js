@@ -1,4 +1,3 @@
-//create Task
 let taskInput = document.getElementById("taskinput");
 let addTask = document.getElementById("addtask");
 
@@ -62,8 +61,10 @@ showData();
 function deleteTasks(i) {
   dataTasks.splice(i,1);
   localStorage.task = JSON.stringify(dataTasks);
-  console.log(i)
+  
+  //show data
   showData();
+  //reload page
   location.reload()
 }
 
